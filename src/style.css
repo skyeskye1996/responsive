@@ -58,11 +58,13 @@ p {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
+  border-radius: 4px;
 }
 
 .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+  border-radius: 4px;
 }
 
 .homepage-link {
@@ -100,4 +102,28 @@ p {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
+}
+
+@media (max-width: 576px) {
+  .about-me-paragraph {
+    margin: 10px;
+  }
+  .email-link {
+    font-size: 20px;
+  }
+  p {
+    text-align: center;
+  }
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
 }
